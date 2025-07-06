@@ -1,0 +1,20 @@
+<div class="container my-5">
+    <h2 class="text-center mb-4">Contatos Favoritos ⭐</h2>
+
+    <div *ngIf="favoriteContacts.length === 0" class="alert alert-info text-center">
+      Nenhum contato favoritado ainda.
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4" *ngFor="let contact of favoriteContacts">
+            <div class="card h-100 shadow-sm contact-card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ contact.name }}</h5>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> {{ contact.phone }}</p>
+                    <p class="card-text"><i class="bi bi-envelope-fill"></i> {{ contact.email }}</p>
+                    <p class="card-text"><i class="bi bi-tag-fill"></i> <span class="badge bg-secondary">{{ contact.category }}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

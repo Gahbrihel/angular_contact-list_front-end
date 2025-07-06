@@ -1,0 +1,83 @@
+<div class="container bg-light p-4 my-5 rounded shadow-sm">
+  <div class="row">
+    <div class="col-md-10 m-auto">
+      <h1 class="text-center mb-4">Cadastro de Contato 📓</h1>
+      <form [formGroup]="formGroupContact">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="inputName" class="form-label">Nome Completo</label>
+            <input formControlName="name" type="text" class="form-control" id="inputName" placeholder="Ex: Ana Silva">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="inputPhone" class="form-label">Telefone</label>
+            <input formControlName="phone" type="tel" class="form-control" id="inputPhone" placeholder="(11) 99999-8888">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input formControlName="email" type="email" class="form-control" id="inputEmail" placeholder="exemplo@email.com">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="inputBirthday" class="form-label">Data de Nascimento</label>
+            <input formControlName="birthday" type="date" class="form-control" id="inputBirthday">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="inputCategory" class="form-label">Categoria</label>
+                <select formControlName="category" class="form-select" id="inputCategory">
+                    <option value="" disabled>Selecione</option>
+                    <option value="Família">Família</option>
+                    <option value="Trabalho">Trabalho</option>
+                    <option value="Escola">Escola</option>
+                    <option value="Amigos">Amigos</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input formControlName="address" type="text" class="form-control" id="inputAddress" placeholder="Rua das Flores, 123">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="inputCity" class="form-label">Cidade</label>
+            <input formControlName="city" type="text" class="form-control" id="inputCity" placeholder="São Paulo">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="inputState" class="form-label">Estado</label>
+                <input formControlName="state" type="text" class="form-control" id="inputState" placeholder="SP">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="inputZipCode" class="form-label">CEP</label>
+                <input formControlName="zipCode" type="text" class="form-control" id="inputZipCode" placeholder="01000-000">
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="inputCompany" class="form-label">Empresa</label>
+            <input formControlName="company" type="text" class="form-control" id="inputCompany" placeholder="Google">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="inputPosition" class="form-label">Cargo</label>
+            <input formControlName="position" type="text" class="form-control" id="inputPosition" placeholder="Desenvolvedor(a)">
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+          <button class="btn btn-primary btn-lg me-2" (click)="save()" [disabled]="formGroupContact.invalid">
+            <i class="bi bi-save me-1"></i> Salvar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
