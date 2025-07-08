@@ -1,0 +1,79 @@
+{
+  contact: [
+  {
+    "id": 1,
+    "name": "Ana Silva",
+    "phone": "+55 11 98765-4321",
+    "email": "ana.silva@example.com",
+    "birthday": "1990-05-15",
+    "address": "Rua das Flores, 123",
+    "city": "São Paulo",
+    "state": "SP",
+    "zipCode": "01234-567",
+    "company": "Tech Solutions",
+    "position": "Desenvolvedora Frontend",
+    "category": "Trabalho",
+    "favorite": true
+  },
+  {
+    "id": 2,
+    "name": "Bruno Costa",
+    "phone": "+55 21 91234-5678",
+    "email": "bruno.costa@example.com",
+    "birthday": "1988-11-20",
+    "address": "Avenida Copacabana, 456",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "zipCode": "21000-100",
+    "company": "Inova Web",
+    "position": "Gerente de Projetos",
+    "category": "Trabalho",
+    "favorite": false
+  },
+  {
+    "id": 3,
+    "name": "Carla Mendes",
+    "phone": "+55 31 99999-8888",
+    "email": "carla.m@email.net",
+    "birthday": "1995-02-10",
+    "address": "Praça da Liberdade, 789",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "zipCode": "30140-010",
+    "company": "",
+    "position": "",
+    "category": "Amigos",
+    "favorite": true
+  },
+  {
+    "id": 4,
+    "name": "Daniel Oliveira",
+    "phone": "+55 71 98888-7777",
+    "email": "daniel.o@email.com",
+    "birthday": "2000-09-30",
+    "address": "Rua do Carmo, 101",
+    "city": "Salvador",
+    "state": "BA",
+    "zipCode": "40301-380",
+    "company": "Universidade Federal da Bahia",
+    "position": "Estudante",
+    "category": "Faculdade",
+    "favorite": false
+  },
+  {
+    "id": 5,
+    "name": "Elisa Ferreira",
+    "phone": "+55 41 97777-6666",
+    "email": "elisa.ferreira@workplace.com",
+    "birthday": "1985-07-25",
+    "address": "Alameda Dr. Muricy, 202",
+    "city": "Curitiba",
+    "state": "PR",
+    "zipCode": "80020-050",
+    "company": "Design Criativo",
+    "position": "Designer Gráfica",
+    "category": "Trabalho",
+    "favorite": true
+  }
+]
+}
