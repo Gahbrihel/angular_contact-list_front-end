@@ -23,7 +23,7 @@ export interface Contact {
   providedIn: 'root'
 })
 export class ContatoService {
-  private readonly apiUrl = 'https://gahcontact.duckdns.org/contact';
+  private readonly apiUrl = 'https://gahcontact.duckdns.org:8080/contact';
   private contactChanged = new Subject<void>();
 
   constructor(private http: HttpClient) { }
